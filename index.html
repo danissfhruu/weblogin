@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home login</title>
+	<h2>HOME LOGIN</h2>
+	<style>
+		body {
+			font-family: Arial;
+		}
+		.danis {
+		  background-color: #f4511e;
+		  border: none;
+		  color: white;
+		  padding: 12px 12px;
+		  text-align: center;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  opacity: 0.6;
+		  transition: 0.3s;
+		  width: 100%;
+		  border-radius: 50px;
+		}
+
+		.btn:hover {
+			opacity: 1
+		}
+		input[type=text],[type=password], select, textarea {
+		  width: 300px;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 50px;
+		  box-sizing: border-box;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+
+		div.container{
+			display: flex;
+  			justify-content: center; /* horizontal */
+			  align-items: center;     /* vertical */
+			  height: 80vh;           /* set tinggi layar penuh */
+		}
+		.daftar{
+			font-size: 80%;
+			text-align: center;
+		}
+
+		body{
+            background-color:deepskyblue;
+        }
+</style>
+</head>
+<body>
+	<div class="container">
+		<form action="proseslogin.php" method="post">
+			<label>Username</label><br>
+			<input autocomplete="off" placeholder="Tulis username anda" type="text" name="username"><br>
+
+			<label>Password</label><br>
+			<input autocomplete="off" placeholder="Tulis password anda" type="password" name="password"><br>
+			
+			<input class="danis" type="submit" value="login"><br>
+			<p class="daftar">Belum punya akun?
+
+			<a href="homedaftar.html">Daftar</a></p>
+		</form>
+	</div>
+	 	
+
+</body>
+</html>

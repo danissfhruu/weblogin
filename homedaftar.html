@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home daftar</title>
+</head>
+<body>
+
+<h2>HOME DAFTAR</h2>
+
+<style>
+        body {
+            font-family: Arial;
+        }
+        .danis {
+          background-color: #f4511e;
+          border: none;
+          color: white;
+          padding: 12px 12px;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          opacity: 0.6;
+          transition: 0.3s;
+          width: 50%;
+          border-radius: 50px;
+        }
+
+        .btn:hover {
+            opacity: 1
+        }
+        input[type=text],[type=password], select, textarea {
+          width: 300px;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 50px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+
+        div.container{
+            display: flex;
+            justify-content: center; /* horizontal */
+              align-items: center;     /* vertical */
+              height: 80vh;           /* set tinggi layar penuh */
+        }
+        
+        .kembali{
+          background-color:gray;
+          border: none;
+          color: white;
+          padding: 12px 12px;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          opacity: 0.6;
+          transition: 0.3s;
+          width: 50%;
+          border-radius: 50px;
+          text-decoration: none;
+          text-align: center;
+        }
+        body{
+            background-color:deepskyblue;
+        }
+</style>
+
+<div class="container">
+    <form method="POST" action="prosesdaftar.php">
+            <label>Nama:</label><br>
+            <input autocomplete="off" placeholder="Tulis nama anda" type="text" name="nama" required><br><br>
+
+            Username: <br>
+           <input autocomplete="off" placeholder="Tulis username anda" type="text" name="username" required><br><br>
+
+            Password: <br>
+           <input autocomplete="off" placeholder="Tulis password anda" type="text" name="password" required><br><br>
+            <input class="danis" type="submit" value="Simpan">
+            <a class="kembali" href="index.html">Kembali</a>
+   </form>
+
+</div>
+</body>
+</html>
